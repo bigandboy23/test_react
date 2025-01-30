@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styling */
+        .header {
+            background-color: #3498db;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin: 0;
+            color: white;
+            font-size: 1.8em;
+        }
+
+        .nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 5px;
+            background-color: #5fa3f7;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #2980b9;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Contact Information Section */
+        .contact-info {
+            flex: 1 1 45%;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info h2 {
+            color: #3498db;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .contact-info p {
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Contact Form Section */
+        .contact-form {
+            flex: 1 1 45%;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            color: #3498db;
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border-color: #3498db;
+        }
+
+        .contact-form button {
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Navigation Buttons */
+        .back-button, .next-button {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 12px 25px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #27ae60;
+            transition: background-color 0.3s;
+        }
+
+        .next-button {
+            background-color: #f39c12;
+        }
+
+        .back-button:hover {
+            background-color: #2ecc71;
+        }
+
+        .next-button:hover {
+            background-color: #f1c40f;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header with Navigation -->
+<div class="header">
+    <h1>Easy Booking</h1>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="book.html">Book</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="content">
+    <div class="contact-container">
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us through the following channels:</p>
+            <p><strong>Email:</strong> contact@easybooking.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Address:</strong> 123 Easy Booking St, Some City, Some Country</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Send us a Message</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <a href="book.html" class="back-button">Go Back</a>
+    <a href="next-page.html" class="next-button">Next</a>
+</div>
+
+</body>
+</html>
