@@ -13,8 +13,6 @@
             flex-direction: column;
             background-color: #f0f4f8;
         }
-
-        /* Header Styling */
         .header {
             background: linear-gradient(45deg, #6fb1fc, #43e97b);
             padding: 15px 30px;
@@ -23,19 +21,16 @@
             align-items: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
-
         .header h1 {
             margin: 0;
             font-size: 28px;
             color: white;
             font-weight: bold;
         }
-
         .nav {
             display: flex;
             gap: 25px;
         }
-
         .nav a {
             text-decoration: none;
             color: #fff;
@@ -45,13 +40,10 @@
             border-radius: 30px;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
-
         .nav a:hover {
             background-color: #f39c12;
             transform: scale(1.1);
         }
-
-        /* Main Container */
         .container {
             width: 100%;
             max-width: 1200px;
@@ -60,8 +52,6 @@
             justify-content: space-between;
             gap: 30px;
         }
-
-        /* Content Section */
         .content {
             flex: 1;
             background-color: #ffffff;
@@ -69,19 +59,16 @@
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
-
         .image-container {
             width: 100%;
             text-align: center;
             margin-bottom: 20px;
         }
-
         .image-container img {
             max-width: 100%;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
-
         .next-btn {
             background-color: #43e97b;
             color: white;
@@ -94,13 +81,10 @@
             font-size: 18px;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
-
         .next-btn:hover {
             background-color: #36d25f;
             transform: scale(1.05);
         }
-
-        /* Sidebar Styling */
         .sidebar {
             width: 280px;
             padding: 25px;
@@ -108,14 +92,12 @@
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
-
         .sidebar h3 {
             font-size: 22px;
             margin-bottom: 25px;
             font-weight: bold;
             color: #2c3e50;
         }
-
         .sidebar a {
             display: block;
             margin-bottom: 20px;
@@ -127,28 +109,22 @@
             border-radius: 30px;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
-
         .sidebar a:hover {
             background-color: #43e97b;
             color: white;
             transform: scale(1.05);
         }
-
     </style>
 </head>
 <body>
-
-<!-- Header with Navigation -->
 <div class="header">
     <h1>Easy Booking</h1>
     <div class="nav">
+        <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="book.html">Book</a>
-        <a href="home.html">Home</a>
     </div>
 </div>
-
-<!-- Main Content -->
 <div class="container">
     <div class="content">
         <div class="image-container">
@@ -156,7 +132,6 @@
         </div>
         <button class="next-btn">Next</button>
     </div>
-
     <div class="sidebar">
         <h3>Contact</h3>
         <a href="#">Facebook</a>
@@ -167,6 +142,5 @@
         <a href="#">Phone</a>
     </div>
 </div>
-
 </body>
 </html>
